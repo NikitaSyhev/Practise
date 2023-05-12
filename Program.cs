@@ -23,11 +23,11 @@ namespace Practise
                 {
                     string file = File.ReadAllText(fileRead); // прочитали весь текст с файла  и записали
                     Regex regex = new Regex(regexInFile);
-                    MatchCollection match = Regex.Matches(file, regexInFile);// ищем совпадения
+                    MatchCollection matches = Regex.Matches(file, regexInFile);// ищем совпадения
 
-                    foreach (Match m in match)
+                    foreach (Match match in matches)
                     {
-                        Console.WriteLine(m.Value);
+                        Console.WriteLine(match.Value);
                     }
                 }
                 catch(Exception ex)
