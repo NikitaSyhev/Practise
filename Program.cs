@@ -32,7 +32,7 @@ namespace Practise
                 }
                 catch(Exception ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Ошибка: " + ex.Message);
                 }
             }
             else
